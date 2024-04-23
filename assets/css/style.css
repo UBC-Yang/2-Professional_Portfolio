@@ -86,24 +86,62 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
-    padding: 2%;
+    padding: 5%;
 }
 
 .about-me p {
     font-size: 20px;
-    padding: 0 30px;
-    line-height: 1.6;
+    padding: 0 20px;
+    line-height: 1.5;
     position: relative;
-    top: 50%;
+    width: 70%;
+
+    border-left: 6px solid darkslategrey;
+    height: 310px;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: 100px;
+    gap: 20px;
+    width: 70%;
+
+    border-left: 6px solid darkslategrey;
+    height: 320px;
+    padding: 2%;
+}
+
+#box-s {
+    padding: 10px;
+    border: 3px solid darkslategrey;
+    border-radius: 5px;
+}
+
+.contact-me {
+    background-color: lightslategray;
+    color: white;
+    padding: 1%;
 }
 
 .contact-me ul {
     font-size: 24px;
-    margin: 10px;
+    padding-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
     list-style: none;
+}
+
+.contact-me ul li {
+    position: relative;
+    left: 200px;
 }
