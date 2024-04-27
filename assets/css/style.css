@@ -55,6 +55,9 @@ a {
 .image {
     background-color: beige;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .image img {
@@ -68,8 +71,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-    position: relative;
-    bottom: 125px;
+    text-align: right;
     padding-right: 200px;
 }
 
@@ -91,7 +93,7 @@ a {
 
 .about-me p {
     font-size: 20px;
-    padding: 0 20px;
+    padding-left: 20px;
     line-height: 1.5;
     position: relative;
     width: 70%;
@@ -120,64 +122,140 @@ a {
 }
 
 #box-s {
+    color: black;
     padding: 10px;
     border: 3px solid darkslategrey;
     border-radius: 5px;
+
+    background-image: url(https://www.visitlagunabeach.com/wp-content/uploads/2024/02/scs_e4b1bf3d70ee2b4345d0062f86634a51.jpg);
+    background-color: gray;
+}
+
+#box-s:hover {
+   opacity: 50%;
 }
 
 .small-box {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 390px 390px;
     grid-auto-rows: 100px;
     gap: 20px;
 }
 
 #box-l {
+    color: white;
     padding: 10px;
     border: 3px solid darkslategrey;
     border-radius: 5px;
+
+    background-image: url(https://t3.ftcdn.net/jpg/00/67/82/84/360_F_67828473_6NBdGaH1nIJhOkd0eHmgTLxiBofcjxTf.jpg);
+    background-color: purple;
 }
+
+#box-l:hover {
+    opacity: 50%;
+ }
 
 #box-c {
+    color: white;
     padding: 10px;
     border: 3px solid darkslategrey;
     border-radius: 5px;
+
+    background-image: url(https://www.nickzom.org/blog/wp-content/uploads/2018/12/24a5d228-4b9f-448f-b2fd-f489e2e4e56f-800x445.jpeg);
+    background-color: beige;
 }
+
+#box-c:hover {
+    opacity: 50%;
+ }
 
 #box-p {
+    color: white;
     padding: 10px;
     border: 3px solid darkslategrey;
     border-radius: 5px;
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPtU5sblb-WLzM2HIQn6jRA618x0-Lt1Lxr0mxHfrnXg&s);
+    background-color: skyblue;
 }
+
+#box-p:hover {
+    opacity: 50%;
+ }
 
 #box-r {
+    color: white;
     padding: 10px;
     border: 3px solid darkslategrey;
     border-radius: 5px;
+
+    background-image: url(https://www.runsociety.com/wp-content/uploads/2015/03/Cherish-Your-Running-Friends-A-Tribute-to-a-Late-Running-Buddy-thumb-960x540.jpg);
+    background-color: yellowgreen;
 }
 
+#box-r:hover {
+    opacity: 50%;
+ }
+
 .contact-me {
+    padding: 2%;
     background-color: lightslategray;
     color: white;
-    padding: 3%;
 }
 
 .contact-me ul {
-    font-size: 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
     list-style: none;
 }
 
 .contact-me ul li {
-    position: relative;
-    left: 200px;
+    font-size: 25px;
+    margin: 10px;
 }
 
-.contact-me ul li:first-child {
-    border-left: 6px solid white;
-    height: 150px;
-    padding-left: 10%;
+
+@media screen and (max-width: 768px) {
+    .title {
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        justify-content: center;
+        width: 150%;
+    }
+
+    .subtitle {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-me p {
+        width: 100%;
+    }
+
+    .small-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-me ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 2%;
+    }
+    
 }

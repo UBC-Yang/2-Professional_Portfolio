@@ -10,7 +10,7 @@
     <body>
         <!--header and navigation section-->
         <header>
-            <h1>Shu Yang</h1>
+            <div class="title"><h1>Shu Yang</h1></div>
             <nav>
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
@@ -27,26 +27,26 @@
                 width="160" 
                 height="200"
                 alt="Image of Latte" />
+
+             <div class="subtitle">
+                <p><em>“There are two means of refuge from the miseries of life: music and cats.” – Albert Schweitzer</em></p>
+            </div>
         </div>
 
-        <div class="subtitle">
-            <p><em>“There are two means of refuge from the miseries of life: music and cats.” – Albert Schweitzer</em></p>
-        </div>
-        
-        <div class="content">
+        <section class="content">
             <div id="about-me" class="about-me">
-                <h2>About Me</h2>
+                <div class="title"><h2>About Me</h2></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum tincidunt sapien ac tincidunt. Vestibulum quis felis at lacus vehicula egestas. Sed feugiat et lacus vel scelerisque. Proin venenatis odio nunc, vel luctus risus dignissim in. Integer aliquam, tellus sit amet blandit bibendum, est neque molestie neque, non euismod metus nisi in velit. In et erat fermentum, aliquam velit posuere, fermentum metus. Proin quis tempus velit, sit amet interdum orci. Donec ullamcorper facilisis convallis. Sed est arcu, suscipit sed efficitur a, accumsan in erat. Sed mollis, lorem eu semper suscipit, orci odio convallis enim, eget feugiat quam quam finibus felis. Duis sit amet quam enim. In a ex nisl. Quisque semper faucibus congue. Sed sit amet sapien nunc. Nam euismod varius vestibulum. Aenean ut tincidunt elit, eu dignissim mi.</p>
             </div>
 
             <div id="work" class="work">
-                <h2>Work</h2>
+                <div class="title"><h2>Work</h2></div>
                 <div class="box">
                     <div id="box-s">
                         <h3>Surf Report</h3>
                         <p>MERN Stack</p>
                     </div>
-                    
+
                     <div class="small-box">
                         <div id="box-l">
                             <h3>LED Wall</h3>
@@ -54,8 +54,10 @@
                         </div>
 
                         <div id="box-c">
-                            <h3>Calculator</h3>
-                            <p>React/JavaScript/CSS</p>
+                            <a href="https://www.calculator.net/" target="_blank">
+                                <h3>Calculator</h3>
+                                <p>React/JavaScript/CSS</p>
+                            </a>
                         </div>
 
                         <div id="box-p">
@@ -70,18 +72,20 @@
                     </div>
                 </div>
             </div>
+       
 
-            <div id="contact-me" class="contact-me">
-                <h2>Contact Me</h2>
+            <footer id="contact-me" class="contact-me">
+                <div class="title"><h2>Contact Me</h2></div>
                 <div>
-                    <ul>
+                    <div id="border"></div>
+                    <ul id="list">
                         <li>555-5555-555</li>
-                        <li>Email</li>
-                        <li>GitHub</li>
+                        <li><a href="yang.shu.psy@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/dashboard">GitHub</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </footer>
+        </section>
    
     </body>
 </html>
